@@ -1,0 +1,112 @@
+{
+  "name": "SoraGlass",
+  "short": "SoraGlass",
+  "description": "A premium liquid-glass theme for Komari Monitor with world map view, refined dashboards, realtime status, and polished node details.",
+  "version": "1.0.0",
+  "author": "isalikai",
+  "url": "https://github.com/isalikai/Komari-Monitor-Theme-SoraGlass.git",
+  "preview": "preview.png",
+  "configuration": {
+    "type": "managed",
+    "icon": "/themes/SoraGlass/dist/assets/icon.svg",
+    "name": "SoraGlass Settings",
+    "data": [
+      {
+        "name": "General",
+        "type": "title"
+      },
+      {
+        "key": "language",
+        "name": "Language / 语言",
+        "type": "select",
+        "options": "auto,zh-CN,en-US",
+        "default": "auto",
+        "help": "Choose front-end display language."
+      },
+      {
+        "key": "home_title_zh",
+        "name": "首页标题（中文）",
+        "type": "string",
+        "default": "基础设施",
+        "help": "中文界面的首页主标题。"
+      },
+      {
+        "key": "home_subtitle_zh",
+        "name": "首页副标题（中文）",
+        "type": "string",
+        "default": "实时节点状态与全球资产分布",
+        "help": "中文界面的首页副标题。"
+      },
+      {
+        "key": "home_title_en",
+        "name": "Home title (English)",
+        "type": "string",
+        "default": "Infrastructure",
+        "help": "English home title."
+      },
+      {
+        "key": "home_subtitle_en",
+        "name": "Home subtitle (English)",
+        "type": "string",
+        "default": "Live fleet status and global node distribution",
+        "help": "English home subtitle."
+      },
+      {
+        "key": "default_view",
+        "name": "Default View / 默认视图",
+        "type": "select",
+        "options": "table,map,compact",
+        "default": "table",
+        "help": "Default node display mode."
+      },
+      {
+        "key": "default_load_hours",
+        "name": "Default Load Range / 默认负载范围",
+        "type": "select",
+        "options": "1,6,24,168",
+        "default": "6",
+        "help": "Default time range for load trend chart."
+      },
+      {
+        "key": "default_ping_hours",
+        "name": "Default Ping Range / 默认延迟范围",
+        "type": "select",
+        "options": "1,6,24,168",
+        "default": "6",
+        "help": "Default time range for latency chart."
+      },
+      {
+        "key": "default_smooth_charts",
+        "name": "Smooth Charts by Default / 默认平滑图表",
+        "type": "switch",
+        "default": true,
+        "help": "Use smooth curves by default."
+      },
+      {
+        "key": "accent",
+        "name": "Accent Color / 强调色",
+        "type": "string",
+        "default": "#2563eb",
+        "help": "CSS color used for active controls and charts."
+      },
+      {
+        "name": "Display",
+        "type": "title"
+      },
+      {
+        "key": "show_billing",
+        "name": "Show Billing / 显示账单",
+        "type": "switch",
+        "default": true,
+        "help": "Show price and expiry information when available."
+      },
+      {
+        "key": "show_footer",
+        "name": "Show Footer / 显示页脚",
+        "type": "switch",
+        "default": true,
+        "help": "Keep the Komari footer visible."
+      }
+    ]
+  }
+}
