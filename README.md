@@ -68,28 +68,9 @@ CPU、RAM、Disk 三个实时圆圈会随着实时数据平滑变化。点击圆
 
 节点详情页支持展示 Komari 的延迟检测历史数据。多个延迟检测任务会显示在同一张图中，并可按任务名称显示或隐藏。
 
-切换节点时会自动清空旧图表，避免 A 节点的延迟数据短暂显示到 B 节点上。
-
 ### 离线节点处理
 
 在线节点优先显示，离线节点自动排到列表底部。离线节点会降低透明度，并带有斜线失活效果，方便快速识别。
-
-### 权重排序
-
-主题支持 Komari 节点的 `weight` 字段。排序逻辑为：
-
-1. 在线节点优先
-2. 离线节点排在最下面
-3. 在线节点内部按 `weight` 从大到小排序
-4. 权重相同再按分组和节点名称排序
-
-兼容字段包括：
-
-- `weight`
-- `sort_weight`
-- `sortWeight`
-- `order`
-- `priority`
 
 ---
 
@@ -106,7 +87,7 @@ CPU、RAM、Disk 三个实时圆圈会随着实时数据平滑变化。点击圆
 
 * 方案2：
 
-1. 通过后台在线方式安装`https://github.com/isalikai/Komari-Monitor-Theme-SoraGlass.git`
+1. 通过后台在线方式导入主题安装`https://github.com/isalikai/Komari-Monitor-Theme-SoraGlass.git`
 
 ---
 
